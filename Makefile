@@ -79,7 +79,7 @@ docker: aufs
 	apt-get install -qq -y curl
 	egrep -i "^docker" /etc/group || groupadd docker
 	usermod -aG docker dokku
-	curl --silent https://get.docker.io/gpg | apt-key add -
+	curl --silent https://get.docker.com/gpg | apt-key add -
 	echo deb http://get.docker.io/ubuntu docker main > /etc/apt/sources.list.d/docker.list
 	apt-get update
 ifdef DOCKER_VERSION
@@ -118,7 +118,7 @@ dokku-installer:
 	test -f /var/lib/dokku/.dokku-installer-created || gem install rack-protection -v 1.5.3 --no-rdoc --no-ri
 	test -f /var/lib/dokku/.dokku-installer-created || gem install sinatra -v 1.4.5 --no-rdoc --no-ri
 	test -f /var/lib/dokku/.dokku-installer-created || gem install tilt -v 1.4.1 --no-rdoc --no-ri
-	test -f /var/lib/dokku/.dokku-installer-created || ruby /root/dokku/contrib/dokku-installer.rb onboot
+	test -f /var/lib/dokku/.dokku-installer-created || ruby contrib/dokku-installer.rb onboot
 	test -f /var/lib/dokku/.dokku-installer-created || service dokku-installer start
 	test -f /var/lib/dokku/.dokku-installer-created || service nginx reload
 	test -f /var/lib/dokku/.dokku-installer-created || touch /var/lib/dokku/.dokku-installer-created

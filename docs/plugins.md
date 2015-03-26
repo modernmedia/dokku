@@ -60,6 +60,7 @@ Note: The following plugins have been supplied by our community and may not have
 [motin]: https://github.com/motin
 [musicglue]: https://github.com/musicglue
 [neam]: https://github.com/neam
+[nickstenning]: https://github.com/nickstenning
 [nornagon]: https://github.com/nornagon
 [ohardy]: https://github.com/ohardy
 [pauldub]: https://github.com/pauldub
@@ -75,6 +76,8 @@ Note: The following plugins have been supplied by our community and may not have
 [wmluke]: https://github.com/wmluke
 [Zenedith]: https://github.com/Zenedith
 [sekjun9878]: https://github.com/sekjun9878
+[Flink]: https://github.com/Flink
+[ribot]: https://github.com/ribot
 
 ### Datastores
 
@@ -162,6 +165,8 @@ Note: The following plugins have been supplied by our community and may not have
 | [SSH Hostkeys](https://github.com/cedricziel/dokku-hostkeys-plugin)<sup>3</sup>                   | [cedricziel][]        | 2014-01-17: compatible with upstream/master |
 | [VHOSTS Custom Configuration](https://github.com/neam/dokku-nginx-vhosts-custom-configuration)    | [motin][]             | Compatible with 0.3.1 |
 | [Volume (persistent storage)](https://github.com/ohardy/dokku-volume)                             | [ohardy][]            | Compatible with 0.2.0 |
+| [Maintenance mode](https://github.com/Flink/dokku-maintenance)                                    | [Flink][]             |                       |
+| [HTTP Auth](https://github.com/Flink/dokku-http-auth)                                             | [Flink][]             |                       |
 
 [8fca220]: https://github.com/progrium/dokku/commit/8fca2204edb0017796d6915ca9157c05b1238e28
 [217d00a]: https://github.com/progrium/dokku/commit/217d00a1bc47a7e24d8847617bb08a1633025fc7
@@ -178,7 +183,7 @@ Note: The following plugins have been supplied by our community and may not have
 
 | Plugin                                                                                            | Author                | Compatibility         |
 | ------------------------------------------------------------------------------------------------- | --------------------- | --------------------- |
-| [Wordpress](https://github.com/dudagroup/dokku-wordpress-template)                                                   | [abossard][]         | Dokku dev, mariadb, volume, domains                      |
+| [Wordpress](https://github.com/dudagroup/dokku-wordpress-template)                                | [abossard][]          | Dokku dev, mariadb, volume, domains |
 | [Node](https://github.com/pnegahdar/dokku-node)                                                   | [pnegahdar][]         |                       |
 | [Node](https://github.com/ademuk/dokku-nodejs)                                                    | [ademuk][]            |                       |
 | [Chef cookbooks](https://github.com/fgrehm/chef-dokku)                                            | [fgrehm][]            |                       |
@@ -186,10 +191,14 @@ Note: The following plugins have been supplied by our community and may not have
 | [Bower/Grunt](https://github.com/thrashr888/dokku-bower-grunt-build-plugin)                       | [thrashr888][]        |                       |
 | [Bower/Gulp](https://github.com/gdi2290/dokku-bower-gulp-build-plugin)                            | [gdi2290][]           |                       |
 | [HipChat Notifications](https://github.com/cef/dokku-hipchat)                                     | [cef][]               |                       |
+| [Slack Notifications](https://github.com/ribot/dokku-slack)                                       | [ribot][]             |                       |
 | [Graphite/statsd](https://github.com/jlachowski/dokku-graphite-plugin)                            | [jlachowski][]        |                       |
 | [APT](https://github.com/F4-Group/dokku-apt)                                                      | [F4-Group][]          |                       |
 | [User ACL](https://github.com/mlebkowski/dokku-acl)                                               | [Maciej Łebkowski][]  |                       |
 | [PrimeCache](https://github.com/darkpixel/dokku-prime-cache)                                      | [darkpixel][]         |                       |
+| [Webhooks](https://github.com/nickstenning/dokku-webhooks)                                        | [nickstenning][]      |                       |
+| [Rails logs](https://github.com/Flink/dokku-rails-logs)                                           | [Flink][]             |                       |
+| [Airbrake deploy](https://github.com/Flink/dokku-airbrake-deploy)                                 | [Flink][]             |                       |
 
 <sup>1</sup> Forked from [jezdez/dokku-elasticsearch-plugin](https://github.com/jezdez/dokku-elasticsearch-plugin): uses Elasticsearch 1.2 (instead of 0.90), doesn't depend on dokku-link, runs as elasticsearch user instead of root, and turns off multicast autodiscovery for use in a VPS environment.
 
